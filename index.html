@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family:  Arial sans-serif;
+    }
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+
+    .form{
+        height: 300px;
+        width: 400px;
+        border: 1px solid #dadada;
+        box-shadow: rgb(0,0,0,0.16) 0px 1px 4px;
+        border-radius: 5px;
+        padding: 30px;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        background-color: #d0d0d0;
+    }
+
+    .form-group{
+        display: flex;
+        gap: 15px;
+    }
+
+    input {
+        width: 200px;
+        height: 35px;
+    }
+
+    select{
+        width: 200px;
+        height: 35px;
+    }
+
+</style>
+<div class="container">
+    <form class="form">
+        <div class="form-group">
+            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Last Name">
+        </div>
+        <div class="form-group">
+            <input type="email" placeholder="Your Email">
+            <input type="tel" placeholder="Last Phone">
+        </div>
+        <div class="form-group">
+            <select name="Seclect Country" id="sc">
+                <option value="">Seclect Country</option>
+                <option value="">Seclect Country</option>
+                <option value="">Seclect Country</option>
+                <option value="">Seclect Country</option>
+            </select>
+            <select name="Seclect Course" id="sce">
+                <option value="">Seclect Course</option>
+                <option value="">Seclect Course</option>
+                <option value="">Seclect Course</option>
+                <option value="">Seclect Course</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="" id="" cols="51" rows="5" placeholder="Content"></textarea>
+        </div>
+    </form>
+</div>
+</body>
+</html>
